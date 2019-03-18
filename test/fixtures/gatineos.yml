@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Cor: MyString
+  Tutor: MyString
+  Raça: MyString
+
+two:
+  Name: MyString
+  Cor: MyString
+  Tutor: MyString
+  Raça: MyString

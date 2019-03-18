@@ -1,0 +1,2 @@
+class Gatineo < ApplicationRecord
+end
