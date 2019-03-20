@@ -5,7 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Nome</th>
       <th>Cor</th>
       <th>Tutor</th>
       <th>Raça</th>
@@ -20,11 +20,11 @@
         <td><%= gatineo.Cor %></td>
         <td><%= gatineo.Tutor %></td>
         <td><%= gatineo.Raça %></td>
-        <td><%= link_to 'Show', gatineo %>
+        <td><%= link_to 'Ver', gatineo %>
         </td>        
-        <td><%= link_to 'Edit', edit_gatineo_path(gatineo) %>
+        <td><%= link_to 'Editar', edit_gatineo_path(gatineo) %>
         </td>
-        <td><%= link_to 'Destroy', gatineo, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <td><%= link_to 'Apagar', gatineo, method: :delete, data: { confirm: 'Você tem certeza?' } %>
         </td>
       </tr>
     <% end %>
@@ -33,5 +33,5 @@
 
 <br>
 <div class="add-new">
-<%= link_to 'New Gatineo', new_gatineo_path %>
+<%= link_to 'Novo Gatineo', new_gatineo_path %>
 </div>

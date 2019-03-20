@@ -28,7 +28,7 @@ class GatineosController < ApplicationController
 
     respond_to do |format|
       if @gatineo.save
-        format.html { redirect_to @gatineo, notice: 'Gatineo was successfully created.' }
+        format.html { redirect_to @gatineo, notice: 'Gatineo criado com sucesso!' }
         format.json { render :show, status: :created, location: @gatineo }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class GatineosController < ApplicationController
   def update
     respond_to do |format|
       if @gatineo.update(gatineo_params)
-        format.html { redirect_to @gatineo, notice: 'Gatineo was successfully updated.' }
+        format.html { redirect_to @gatineo, notice: 'Gatineo atualizado com sucesso!' }
         format.json { render :show, status: :ok, location: @gatineo }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class GatineosController < ApplicationController
   def destroy
     @gatineo.destroy
     respond_to do |format|
-      format.html { redirect_to gatineos_url, notice: 'Gatineo was successfully destroyed.' }
+      format.html { redirect_to gatineos_url, notice: 'Gatineo apagado com sucesso!' }
       format.json { head :no_content }
     end
   end
